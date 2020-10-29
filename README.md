@@ -1,3 +1,1 @@
-# devopsLearn
-# devopsLearn
-# devopsLearn
+Project for MeetUp group 'Learn DevOps Together'
