@@ -12,7 +12,15 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
- 
+
+- task: UseDotNet@2
+  displayName: 'Use .NET Core sdk'
+  inputs:
+    packageType: sdk
+    version: 5.0.100-rc.2.20479.15
+    includePreviewVersions: true
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
